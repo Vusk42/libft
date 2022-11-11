@@ -6,7 +6,7 @@
 /*   By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/27 09:20:06 by mrudloff          #+#    #+#             */
-/*   Updated: 2022/10/29 22:05:56 by mrudloff         ###   ########.fr       */
+/*   Updated: 2022/11/01 19:07:54 by mrudloff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ int		ft_isdigit(int c);
 int		ft_isprint(int c);
 
 /*	LIST	*/
-void	ft_lstadd_back(t_list **lst, t_list *new);
-void	ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstadd_back(t_list **lst, t_list *newl);
+void	ft_lstadd_front(t_list **lst, t_list *newl);
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));

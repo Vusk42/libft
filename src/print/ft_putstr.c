@@ -6,7 +6,7 @@
 /*   By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 13:28:05 by mrudloff          #+#    #+#             */
-/*   Updated: 2022/10/29 21:12:00 by mrudloff         ###   ########.fr       */
+/*   Updated: 2022/11/11 01:04:29 by mrudloff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	ft_putstr(char	*s)
 	i = 0;
 	if (!s)
 		return (write(1, "(null)", 6));
-	
 	while (s[i])
 		i++;
 	return (write(1, s, i));
