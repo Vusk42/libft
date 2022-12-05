@@ -6,7 +6,7 @@
 /*   By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/27 09:20:06 by mrudloff          #+#    #+#             */
-/*   Updated: 2022/11/01 19:07:54 by mrudloff         ###   ########.fr       */
+/*   Updated: 2022/11/15 18:40:37 by mrudloff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
+int		ft_isspace(int c);
 
 /*	LIST	*/
 void	ft_lstadd_back(t_list **lst, t_list *newl);
@@ -64,12 +65,14 @@ int		ft_putstr_fd(char *s, int fd);
 /*	STRING	*/
 char	*ft_itoa(int n);
 int		ft_atoi(const char *nptr);
+double	ft_atof(const char *nptr);
 char	*ft_strcapitalize(char *s);
 size_t	ft_nbrlen_base(long long int n, size_t base);
 char	*ft_ptr_setstring(const char *s);
 size_t	ft_unbrlen_base(unsigned long long int n, size_t base);
 char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *s, int c);
+int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strdup(const char *s);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strjoin(char const *s1, char const *s2);

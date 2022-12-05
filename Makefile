@@ -6,7 +6,7 @@
 #    By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/02 15:36:49 by mrudloff          #+#    #+#              #
-#    Updated: 2022/11/11 02:28:48 by mrudloff         ###   ########.fr        #
+#    Updated: 2022/11/15 18:39:55 by mrudloff         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,6 +40,7 @@ SRC	= ./src/check/ft_isalnum.c\
 	  ./src/check/ft_isascii.c\
 	  ./src/check/ft_isdigit.c\
 	  ./src/check/ft_isprint.c\
+	  ./src/check/ft_isspace.c\
 	  ./src/list/ft_lstadd_back.c\
 	  ./src/list/ft_lstadd_front.c\
 	  ./src/list/ft_lstclear.c\
@@ -67,12 +68,14 @@ SRC	= ./src/check/ft_isalnum.c\
 	  ./src/print/ft_putstr_fd.c\
 	  ./src/print/ft_putunbr_base.c\
 	  ./src/string/ft_atoi.c\
+	  ./src/string/ft_atof.c\
 	  ./src/string/ft_itoa.c\
 	  ./src/string/ft_nbrlen_base.c\
 	  ./src/string/ft_ptr_setstring.c\
 	  ./src/string/ft_split.c\
 	  ./src/string/ft_strcapitalize.c\
 	  ./src/string/ft_strchr.c\
+	  ./src/string/ft_strcmp.c\
 	  ./src/string/ft_strdup.c\
 	  ./src/string/ft_striteri.c\
 	  ./src/string/ft_strjoin.c\
