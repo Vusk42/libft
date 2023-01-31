@@ -6,12 +6,12 @@
 #    By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/02 15:36:49 by mrudloff          #+#    #+#              #
-#    Updated: 2023/01/31 10:59:26 by mrudloff         ###   ########.fr        #
+#    Updated: 2023/01/31 12:49:38 by mrudloff         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # **************************************************************************** #
-# 								NAME PROJETCT								   #
+# 								NAME PROJECT								   #
 # **************************************************************************** #
 NAME	=	libft.a
 
@@ -75,7 +75,7 @@ STRING		:=	$(SRC_STRING:%=$(STRING_DIR)/%)
 
 #ALL SOURCES
 SRCS_DIR	:=	src
-ALL_SRCS	:=	$(CHECK) $(LIST) $(MEM) $(PRINT) #$(STRING)
+ALL_SRCS	:=	$(CHECK) $(LIST) $(MEM) $(PRINT) $(STRING)
 SRCS		:=	$(ALL_SRCS:%=$(SRCS_DIR)/%)
 
 # OBJECTS
