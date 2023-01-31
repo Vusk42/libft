@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atof.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrudloff <mrudloff@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: mrudloff <mrudloff@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/15 19:40:32 by mrudloff          #+#    #+#             */
-/*   Updated: 2022/11/28 13:27:17 by mrudloff         ###   ########.fr       */
+/*   Created: 2023/01/31 10:17:37 by mrudloff          #+#    #+#             */
+/*   Updated: 2023/01/31 10:17:45 by mrudloff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include <libft.h>
 
 static double	after_point(const char *nptr, double res, int index)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mrudloff <mrudloff@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/27 09:55:09 by mrudloff          #+#    #+#             */
-/*   Updated: 2022/10/28 18:21:59 by mrudloff         ###   ########.fr       */
+/*   Created: 2023/01/31 10:16:11 by mrudloff          #+#    #+#             */
+/*   Updated: 2023/01/31 10:16:18 by mrudloff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include <libft.h>
 
 int	ft_putnbr_base(long long int n, const char *base)
 {

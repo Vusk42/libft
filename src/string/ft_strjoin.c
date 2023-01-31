@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mrudloff <mrudloff@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/26 16:16:20 by mrudloff          #+#    #+#             */
-/*   Updated: 2022/10/27 11:44:36 by mrudloff         ###   ########.fr       */
+/*   Created: 2023/01/31 10:20:21 by mrudloff          #+#    #+#             */
+/*   Updated: 2023/01/31 10:20:29 by mrudloff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include <libft.h>
 
 static void	ft_str_cat(char *join, char const *s1, char const *s2)
 {

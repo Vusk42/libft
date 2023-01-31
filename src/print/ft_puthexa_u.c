@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_puthexa_u.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mrudloff <mrudloff@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/28 23:27:43 by mrudloff          #+#    #+#             */
-/*   Updated: 2022/10/30 00:19:50 by mrudloff         ###   ########.fr       */
+/*   Created: 2023/01/31 10:15:42 by mrudloff          #+#    #+#             */
+/*   Updated: 2023/01/31 10:15:50 by mrudloff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include <libft.h>
 
 int	ft_puthexa_u(unsigned long long int n, char format)
 {

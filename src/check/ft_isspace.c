@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrudloff <mrudloff@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: mrudloff <mrudloff@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/15 18:26:17 by mrudloff          #+#    #+#             */
-/*   Updated: 2022/11/15 19:44:13 by mrudloff         ###   ########.fr       */
+/*   Created: 2023/01/31 09:50:46 by mrudloff          #+#    #+#             */
+/*   Updated: 2023/01/31 09:50:47 by mrudloff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

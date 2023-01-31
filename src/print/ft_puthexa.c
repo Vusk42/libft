@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_puthexa.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mrudloff <mrudloff@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/27 21:11:15 by mrudloff          #+#    #+#             */
-/*   Updated: 2022/10/29 22:08:24 by mrudloff         ###   ########.fr       */
+/*   Created: 2023/01/31 10:15:02 by mrudloff          #+#    #+#             */
+/*   Updated: 2023/01/31 10:15:09 by mrudloff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include <libft.h>
 
 int	ft_puthexa(long long int n, char format)
 {

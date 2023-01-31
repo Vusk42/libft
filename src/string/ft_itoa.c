@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mrudloff <mrudloff@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/02 14:18:53 by mrudloff          #+#    #+#             */
-/*   Updated: 2022/10/27 11:44:13 by mrudloff         ###   ########.fr       */
+/*   Created: 2023/01/31 10:18:14 by mrudloff          #+#    #+#             */
+/*   Updated: 2023/01/31 10:18:21 by mrudloff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include <libft.h>
 
 static int	ft_sizeinteger(int n)
 {

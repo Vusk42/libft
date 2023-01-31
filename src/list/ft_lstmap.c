@@ -6,11 +6,11 @@
 /*   By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 11:42:15 by mrudloff          #+#    #+#             */
-/*   Updated: 2022/10/27 11:42:20 by mrudloff         ###   ########.fr       */
+/*   Updated: 2023/01/31 09:53:32 by mrudloff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include <libft.h>
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mrudloff <mrudloff@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/02 14:17:29 by mrudloff          #+#    #+#             */
-/*   Updated: 2022/10/27 11:44:20 by mrudloff         ###   ########.fr       */
+/*   Created: 2023/01/31 10:19:04 by mrudloff          #+#    #+#             */
+/*   Updated: 2023/01/31 10:19:15 by mrudloff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include <libft.h>
 
 static int	ft_nbrword(char const *src, char c)
 {
@@ -48,7 +48,6 @@ static void	*ft_insert(char *dest, char const *src, int index, int n)
 	return (dest);
 }
 
-//to improve: recursive free() if malloc fail
 static void	ft_create_split(char **split, char const *src, char c, int line)
 {
 	int	i;

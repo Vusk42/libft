@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mrudloff <mrudloff@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/26 11:22:30 by mrudloff          #+#    #+#             */
-/*   Updated: 2022/11/15 18:54:32 by mrudloff         ###   ########.fr       */
+/*   Created: 2023/01/31 10:18:00 by mrudloff          #+#    #+#             */
+/*   Updated: 2023/01/31 10:46:15 by mrudloff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include <libft.h>
 
 int	ft_atoi(const char *nptr)
 {

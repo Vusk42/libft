@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ptr_setstring.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mrudloff <mrudloff@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/29 20:49:52 by mrudloff          #+#    #+#             */
-/*   Updated: 2022/10/29 20:53:15 by mrudloff         ###   ########.fr       */
+/*   Created: 2023/01/31 10:18:49 by mrudloff          #+#    #+#             */
+/*   Updated: 2023/01/31 10:18:55 by mrudloff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include <libft.h>
 
 char	*ft_ptr_setstring(const char *s)
 {

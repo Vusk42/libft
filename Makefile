@@ -6,113 +6,123 @@
 #    By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/02 15:36:49 by mrudloff          #+#    #+#              #
-#    Updated: 2022/11/15 18:39:55 by mrudloff         ###   ########.fr        #
+#    Updated: 2023/01/31 10:59:26 by mrudloff         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# PROJECT #
-NAME	= libft.a
-CC		= @clang
-CFLAGS	= -Wall -Wextra -Werror
-RM		= @rm -f
-FILE	= $(shell ls -lR src/ | grep -F .c | wc -l)
-CMP		= 1
-CLEAR	= @clear
+# **************************************************************************** #
+# 								NAME PROJETCT								   #
+# **************************************************************************** #
+NAME	=	libft.a
 
-# COLOR #
-GREEN	= \033[38;5;76m
-RED		= \033[38;5;160m
-YELLOW	= \033[38;5;226m
-ORANGE	= \033[38;5;202m
-PURPLE	= \033[38;5;213m
-LBLUE	= \033[38;5;51m
-BLUE	= \033[38;5;117m
-INDI	= \033[38;5;99m
-RESET	= \033[00m
+# **************************************************************************** #
+# 								  COMMANDS									   #
+# **************************************************************************** #
+CC		=	@clang
+CFLAGS	=	-Wall -Wextra -Werror
+IFLAGS	=	-Iinc
+MK		=	@mkdir -p
+RM		=	@rm -rf
+FILE	=	$(shell ls -lR src/ | grep -F .c | wc -l)
+CMP		=	1
+CLEAR	=	@clear
+
+# **************************************************************************** #
+# 								   COLORS									   #
+# **************************************************************************** #
+GREEN	=	\033[38;5;76m
+RED		=	\033[38;5;160m
+YELLOW	=	\033[38;5;226m
+ORANGE	=	\033[38;5;202m
+PURPLE	=	\033[38;5;213m
+LBLUE	=	\033[38;5;51m
+BLUE	=	\033[38;5;117m
+INDI	=	\033[38;5;99m
+RESET	=	\033[00m
+
+# **************************************************************************** #
+# 								   PRINTS									   #
+# **************************************************************************** #
+RNBW	=	@printf "                                                                     \r$(RED)Lib$(ORANGE)ft$(YELLOW) is$(GREEN) re$(LBLUE)ady $(INDI)to $(PURPLE)use$(RESET)\n"
+
+# **************************************************************************** #
+# 								   SOURCES									   #
+# **************************************************************************** #
+# CHECK
+CHECK_DIR	:=	check
+SRC_CHECK	:=	ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_isspace.c
+CHECK		:=	$(SRC_CHECK:%=$(CHECK_DIR)/%)
+
+#LIST
+LIST_DIR	:=	list
+SRC_LIST	:=	ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c
+LIST		:=	$(SRC_LIST:%=$(LIST_DIR)/%)
+
+# MEMORY
+MEM_DIR		:=	memory
+SRC_MEM		:=	ft_bzero.c ft_calloc.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c
+MEM			:=	$(SRC_MEM:%=$(MEM_DIR)/%)
 
 # PRINT
-# Libft is ready to use
-RNBW	= @printf "                                                                     \r$(RED)Lib$(ORANGE)ft$(YELLOW) is$(GREEN) re$(LBLUE)ady $(INDI)to $(PURPLE)use$(RESET)\n"
+PRINT_DIR	:=	print
+SRC_PRINT	:=	ft_putchar.c ft_putchar_fd.c ft_putendl_fd.c ft_puthexa.c ft_puthexa_u.c ft_putnbr_base.c ft_putnbr_fd.c ft_putstr.c ft_putstr_fd.c ft_putunbr_base.c
+PRINT		:=	$(SRC_PRINT:%=$(PRINT_DIR)/%)
 
-# SOURCES #
-SRC	= ./src/check/ft_isalnum.c\
-	  ./src/check/ft_isalpha.c\
-	  ./src/check/ft_isascii.c\
-	  ./src/check/ft_isdigit.c\
-	  ./src/check/ft_isprint.c\
-	  ./src/check/ft_isspace.c\
-	  ./src/list/ft_lstadd_back.c\
-	  ./src/list/ft_lstadd_front.c\
-	  ./src/list/ft_lstclear.c\
-	  ./src/list/ft_lstdelone.c\
-	  ./src/list/ft_lstiter.c\
-	  ./src/list/ft_lstlast.c\
-	  ./src/list/ft_lstmap.c\
-	  ./src/list/ft_lstnew.c\
-	  ./src/list/ft_lstsize.c\
-	  ./src/memory/ft_bzero.c\
-	  ./src/memory/ft_calloc.c\
-	  ./src/memory/ft_memchr.c\
-	  ./src/memory/ft_memcmp.c\
-	  ./src/memory/ft_memcpy.c\
-	  ./src/memory/ft_memmove.c\
-	  ./src/memory/ft_memset.c\
-	  ./src/print/ft_putchar.c\
-	  ./src/print/ft_putchar_fd.c\
-	  ./src/print/ft_putendl_fd.c\
-	  ./src/print/ft_puthexa.c\
-	  ./src/print/ft_puthexa_u.c\
-	  ./src/print/ft_putnbr_base.c\
-	  ./src/print/ft_putnbr_fd.c\
-	  ./src/print/ft_putstr.c\
-	  ./src/print/ft_putstr_fd.c\
-	  ./src/print/ft_putunbr_base.c\
-	  ./src/string/ft_atoi.c\
-	  ./src/string/ft_atof.c\
-	  ./src/string/ft_itoa.c\
-	  ./src/string/ft_nbrlen_base.c\
-	  ./src/string/ft_ptr_setstring.c\
-	  ./src/string/ft_split.c\
-	  ./src/string/ft_strcapitalize.c\
-	  ./src/string/ft_strchr.c\
-	  ./src/string/ft_strcmp.c\
-	  ./src/string/ft_strdup.c\
-	  ./src/string/ft_striteri.c\
-	  ./src/string/ft_strjoin.c\
-	  ./src/string/ft_strlcat.c\
-	  ./src/string/ft_strlcpy.c\
-	  ./src/string/ft_strlen.c\
-	  ./src/string/ft_strmapi.c\
-	  ./src/string/ft_strncmp.c\
-	  ./src/string/ft_strnstr.c\
-	  ./src/string/ft_strrchr.c\
-	  ./src/string/ft_strtrim.c\
-	  ./src/string/ft_substr.c\
-	  ./src/string/ft_tolower.c\
-	  ./src/string/ft_toupper.c\
-	  ./src/string/ft_unbrlen_base.c
-OBJ	= $(SRC:.c=.o)
+# STRING
+STRING_DIR	:=	string
+SRC_STRING	:=	ft_atof.c ft_atoi.c ft_itoa.c ft_nbrlen_base.c ft_ptr_setstring.c ft_split.c ft_strcapitalize.c ft_strchr.c ft_strcmp.c ft_strdup.c ft_striteri.c ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c ft_unbrlen_base.c
+STRING		:=	$(SRC_STRING:%=$(STRING_DIR)/%)
+
+#ALL SOURCES
+SRCS_DIR	:=	src
+ALL_SRCS	:=	$(CHECK) $(LIST) $(MEM) $(PRINT) #$(STRING)
+SRCS		:=	$(ALL_SRCS:%=$(SRCS_DIR)/%)
+
+# OBJECTS
+OBJS_DIR	:=	.objs
+OBJS		:=	$(addprefix $(OBJS_DIR)/, $(SRCS:%.c=%.o))
+
+# **************************************************************************** #
+# 								     RULES									   #
+# **************************************************************************** #
 
 all: $(NAME)
 
-%.o: %.c
+$(OBJS_DIR)/%.o: %.c
+	$(MK) $(@D)
 	@printf "\r$(LBLUE)[$(RESET)$(CMP)$(LBLUE)] $(RESET)Compilation in progress... $(GREEN)$<$(BLUE) [$(RESET)$(CMP)$(BLUE)/$(RESET)$(FILE)$(BLUE)]$(RESET)                        \r"
-	$(CC) $(CFLAGS) -c $< -o  $@
+	$(CC) $(CFLAGS) $(IFLAGS) -c $< -o  $@
 	@$(eval CMP=$(shell echo $$(($(CMP)+1))))
 
-$(NAME): $(OBJ)
-	@ar rcs $(NAME) $(OBJ)
+$(NAME): $(OBJS)
+	@ar rcs $(NAME) $(OBJS)
 	$(RNBW)	
 
 clean:
-	$(RM) $(OBJ)
+	$(RM) $(OBJS_DIR)
 
 fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
 
-.SILENT:
-	all
-.PHONY: 
-	all clean fclean re
+# **************************************************************************** #
+# 								 EXTRA RULES								   #
+# **************************************************************************** #
+
+run: re
+	-./$(NAME)
+
+info-%:
+	$(MAKE) --dry-run --always-make $* | grep -v "info"
+
+print-%:
+	$(info '$*'='$($*)')
+
+update:
+	git stash
+	git pull
+	git submodule update --init
+	git stash pop
+
+.PHONY: all clean fclean re run update
