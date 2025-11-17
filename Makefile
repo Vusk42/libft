@@ -3,32 +3,34 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mrudloff <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/10/02 15:36:49 by mrudloff          #+#    #+#              #
-#    Updated: 2023/01/31 12:49:38 by mrudloff         ###   ########.fr        #
+#    Created: 2025/10/13 11:28:44 by marudlof          #+#    #+#              #
+#    Updated: 2025/11/17 13:41:06 by marudlof         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # **************************************************************************** #
-# 								NAME PROJECT								   #
+# 								NAME PROJECT				   				   #
 # **************************************************************************** #
 NAME	=	libft.a
 
 # **************************************************************************** #
-# 								  COMMANDS									   #
+#								COMMANDS									   #
 # **************************************************************************** #
-CC		=	@clang
+
+AR		=	@ar rcs
+CC		=	@cc
 CFLAGS	=	-Wall -Wextra -Werror
-IFLAGS	=	-Iinc
+IFLAGS	=	-Iincludes
 MK		=	@mkdir -p
 RM		=	@rm -rf
-FILE	=	$(shell ls -lR src/ | grep -F .c | wc -l)
+FILE	=	$(shell ls -lR srcs/ | grep -F .c | wc -l)
 CMP		=	1
 CLEAR	=	@clear
 
 # **************************************************************************** #
-# 								   COLORS									   #
+# 								   COLORS				   					   #
 # **************************************************************************** #
 GREEN	=	\033[38;5;76m
 RED		=	\033[38;5;160m
@@ -41,12 +43,12 @@ INDI	=	\033[38;5;99m
 RESET	=	\033[00m
 
 # **************************************************************************** #
-# 								   PRINTS									   #
+# 								   PRINTS				  					   #
 # **************************************************************************** #
-RNBW	=	@printf "                                                                     \r$(RED)Lib$(ORANGE)ft$(YELLOW) is$(GREEN) re$(LBLUE)ady $(INDI)to $(PURPLE)use$(RESET)\n"
+RNBW	=	@printf "                                                                    \r$(RED)Lib$(ORANGE)ft$(YELLOW) is$(GREEN) re$(LBLUE)ady $(INDI)to $(PURPLE)use$(RESET)\n"
 
 # **************************************************************************** #
-# 								   SOURCES									   #
+# 								   SOURCES				     				   #
 # **************************************************************************** #
 # CHECK
 CHECK_DIR	:=	check
@@ -58,24 +60,34 @@ LIST_DIR	:=	list
 SRC_LIST	:=	ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c
 LIST		:=	$(SRC_LIST:%=$(LIST_DIR)/%)
 
+#DBLIST
+DBLIST_DIR	:=	dblist
+SRC_DBLIST	:=	ft_dbadd_back.c ft_dbadd_front.c ft_dbclear.c ft_dbdelone.c ft_dbiter.c ft_dblast.c ft_dbmap.c ft_dbnew.c ft_dbsize.c
+DBLIST		:=	$(SRC_DBLIST:%=$(DBLIST_DIR)/%)
+
 # MEMORY
 MEM_DIR		:=	memory
-SRC_MEM		:=	ft_bzero.c ft_calloc.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c
+SRC_MEM		:=	ft_bzero.c ft_calloc.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_freeptr.c
 MEM			:=	$(SRC_MEM:%=$(MEM_DIR)/%)
 
 # PRINT
 PRINT_DIR	:=	print
-SRC_PRINT	:=	ft_putchar.c ft_putchar_fd.c ft_putendl_fd.c ft_puthexa.c ft_puthexa_u.c ft_putnbr_base.c ft_putnbr_fd.c ft_putstr.c ft_putstr_fd.c ft_putunbr_base.c
+SRC_PRINT	:=	ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_putnbr_base_fd.c ft_putunbr_base_fd.c ft_puthexa_fd.c ft_putuhexa_fd.c ft_printf.c
 PRINT		:=	$(SRC_PRINT:%=$(PRINT_DIR)/%)
 
 # STRING
 STRING_DIR	:=	string
-SRC_STRING	:=	ft_atof.c ft_atoi.c ft_itoa.c ft_nbrlen_base.c ft_ptr_setstring.c ft_split.c ft_strcapitalize.c ft_strchr.c ft_strcmp.c ft_strdup.c ft_striteri.c ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c ft_unbrlen_base.c
+SRC_STRING	:=	ft_atoi.c ft_itoa.c ft_split.c ft_strchr.c ft_strdup.c ft_striteri.c ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c ft_nbrlen_base.c ft_unbrlen_base.c ft_atol.c
 STRING		:=	$(SRC_STRING:%=$(STRING_DIR)/%)
 
+# TREE
+TREE_DIR	:=	tree
+SRC_TREE	:=	btree_create_node.c btree_apply_prefix.c btree_apply_infix.c btree_apply_suffix.c btree_insert_data.c btree_search_item.c btree_level_count.c btree_apply_by_level.c btree_free.c
+TREE		:=	$(SRC_TREE:%=$(TREE_DIR)/%)
+
 #ALL SOURCES
-SRCS_DIR	:=	src
-ALL_SRCS	:=	$(CHECK) $(LIST) $(MEM) $(PRINT) $(STRING)
+SRCS_DIR	:=	srcs
+ALL_SRCS	:=	$(CHECK) $(MEM) $(PRINT) $(STRING) $(LIST) $(DBLIST) $(TREE)
 SRCS		:=	$(ALL_SRCS:%=$(SRCS_DIR)/%)
 
 # OBJECTS
@@ -95,7 +107,7 @@ $(OBJS_DIR)/%.o: %.c
 	@$(eval CMP=$(shell echo $$(($(CMP)+1))))
 
 $(NAME): $(OBJS)
-	@ar rcs $(NAME) $(OBJS)
+	$(AR) $(NAME) $(OBJS)
 	$(RNBW)	
 
 clean:
@@ -106,23 +118,4 @@ fclean: clean
 
 re: fclean all
 
-# **************************************************************************** #
-# 								 EXTRA RULES								   #
-# **************************************************************************** #
-
-run: re
-	-./$(NAME)
-
-info-%:
-	$(MAKE) --dry-run --always-make $* | grep -v "info"
-
-print-%:
-	$(info '$*'='$($*)')
-
-update:
-	git stash
-	git pull
-	git submodule update --init
-	git stash pop
-
-.PHONY: all clean fclean re run update
+.PHONY: all clean fclean re bonus
