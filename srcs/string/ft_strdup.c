@@ -6,11 +6,11 @@
 /*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:40:32 by marudlof          #+#    #+#             */
-/*   Updated: 2025/10/18 17:21:34 by marudlof         ###   ########.fr       */
+/*   Updated: 2025/11/17 17:02:47 by marudlof         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft/string.h"
+#include "../../includes/ft/string.h"
 
 char	*ft_strdup(const char *s)
 {

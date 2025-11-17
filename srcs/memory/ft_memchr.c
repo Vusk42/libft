@@ -6,11 +6,11 @@
 /*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 15:59:35 by marudlof          #+#    #+#             */
-/*   Updated: 2025/10/18 17:17:22 by marudlof         ###   ########.fr       */
+/*   Updated: 2025/11/17 17:00:31 by marudlof         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft/memory.h"
+#include "../../includes/ft/memory.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

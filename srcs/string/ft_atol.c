@@ -6,12 +6,12 @@
 /*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 22:47:11 by marudlof          #+#    #+#             */
-/*   Updated: 2025/10/30 20:13:54 by marudlof         ###   ########.fr       */
+/*   Updated: 2025/11/17 17:02:26 by marudlof         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft/string.h"
 #include <limits.h>
+#include "../../includes/ft/string.h"
 
 long	ft_atol(const char *nptr)
 {

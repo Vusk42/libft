@@ -6,11 +6,11 @@
 /*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:35:27 by marudlof          #+#    #+#             */
-/*   Updated: 2025/10/19 18:40:04 by marudlof         ###   ########.fr       */
+/*   Updated: 2025/11/17 17:03:31 by marudlof         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft/string.h"
+#include "../../includes/ft/string.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

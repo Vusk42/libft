@@ -6,11 +6,11 @@
 /*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:43:12 by marudlof          #+#    #+#             */
-/*   Updated: 2025/10/18 17:19:34 by marudlof         ###   ########.fr       */
+/*   Updated: 2025/11/17 17:02:41 by marudlof         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft/string.h"
+#include "../../includes/ft/string.h"
 
 static int	ft_nbrword(char const *src, char c)
 {

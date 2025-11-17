@@ -6,11 +6,11 @@
 /*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:43:49 by marudlof          #+#    #+#             */
-/*   Updated: 2025/10/18 17:21:41 by marudlof         ###   ########.fr       */
+/*   Updated: 2025/11/17 17:03:15 by marudlof         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft/string.h"
+#include "../../includes/ft/string.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

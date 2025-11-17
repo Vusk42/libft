@@ -6,11 +6,11 @@
 /*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:00:20 by marudlof          #+#    #+#             */
-/*   Updated: 2025/10/18 17:17:35 by marudlof         ###   ########.fr       */
+/*   Updated: 2025/11/17 17:00:35 by marudlof         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft/memory.h"
+#include "../../includes/ft/memory.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

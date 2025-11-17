@@ -6,11 +6,11 @@
 /*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:41:39 by marudlof          #+#    #+#             */
-/*   Updated: 2025/10/18 17:21:37 by marudlof         ###   ########.fr       */
+/*   Updated: 2025/11/17 17:02:58 by marudlof         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft/string.h"
+#include "../../includes/ft/string.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

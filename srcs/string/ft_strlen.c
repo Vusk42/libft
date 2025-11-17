@@ -6,11 +6,11 @@
 /*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 14:51:05 by marudlof          #+#    #+#             */
-/*   Updated: 2025/10/18 17:21:39 by marudlof         ###   ########.fr       */
+/*   Updated: 2025/11/17 17:03:06 by marudlof         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft/string.h"
+#include "../../includes/ft/string.h"
 
 size_t	ft_strlen(const char *str)
 {

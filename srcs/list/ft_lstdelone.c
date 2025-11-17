@@ -6,12 +6,12 @@
 /*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:29:31 by marudlof          #+#    #+#             */
-/*   Updated: 2025/10/30 19:21:11 by marudlof         ###   ########.fr       */
+/*   Updated: 2025/11/17 16:58:11 by marudlof         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "ft/data/list.h"
+#include "../../includes/ft/data/list.h"
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {

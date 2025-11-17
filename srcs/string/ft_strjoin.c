@@ -6,11 +6,11 @@
 /*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:38:37 by marudlof          #+#    #+#             */
-/*   Updated: 2025/10/18 17:21:36 by marudlof         ###   ########.fr       */
+/*   Updated: 2025/11/17 17:02:53 by marudlof         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft/string.h"
+#include "../../includes/ft/string.h"
 
 static void	ft_strjcat(char *join, char const *s1, char const *s2)
 {
