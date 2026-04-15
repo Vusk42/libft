@@ -6,7 +6,7 @@
 #    By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 11:28:44 by marudlof          #+#    #+#              #
-#    Updated: 2025/11/17 13:41:06 by marudlof         ###   ########.fr        #
+#    Updated: 2026/04/15 16:30:58 by marudlof         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,7 +72,7 @@ MEM			:=	$(SRC_MEM:%=$(MEM_DIR)/%)
 
 # PRINT
 PRINT_DIR	:=	print
-SRC_PRINT	:=	ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_putnbr_base_fd.c ft_putunbr_base_fd.c ft_puthexa_fd.c ft_putuhexa_fd.c ft_printf.c
+SRC_PRINT	:=	ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_putnbr_base_fd.c ft_putunbr_base_fd.c ft_puthexa_fd.c ft_putuhexa_fd.c ft_printf.c ft_dprintf.c
 PRINT		:=	$(SRC_PRINT:%=$(PRINT_DIR)/%)
 
 # STRING

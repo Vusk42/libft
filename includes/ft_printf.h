@@ -6,7 +6,7 @@
 /*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 13:45:37 by marudlof          #+#    #+#             */
-/*   Updated: 2025/11/17 13:41:58 by marudlof         ###   ########.fr       */
+/*   Updated: 2026/04/15 16:32:08 by marudlof         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@
 # include <string.h>
 
 int	ft_printf(const char *format, ...);
-//int	ft_dprintf(int fd, char *format, ...);
+int	ft_dprintf(int fd, const char *format, ...);
 
 #endif
