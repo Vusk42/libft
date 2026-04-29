@@ -6,7 +6,7 @@
 /*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 20:44:50 by marudlof          #+#    #+#             */
-/*   Updated: 2025/10/29 22:52:37 by marudlof         ###   ########.fr       */
+/*   Updated: 2026/04/29 22:59:11 by marudlof         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ size_t	ft_tabsize(void **tab);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, char const *src, size_t size);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_strcmp(const char *s1, const char *s2);
 
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 

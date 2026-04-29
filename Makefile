@@ -6,7 +6,7 @@
 #    By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 11:28:44 by marudlof          #+#    #+#              #
-#    Updated: 2026/04/15 16:30:58 by marudlof         ###   ########.fr        #
+#    Updated: 2026/04/29 22:59:30 by marudlof         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,7 +77,7 @@ PRINT		:=	$(SRC_PRINT:%=$(PRINT_DIR)/%)
 
 # STRING
 STRING_DIR	:=	string
-SRC_STRING	:=	ft_atoi.c ft_itoa.c ft_split.c ft_strchr.c ft_strdup.c ft_striteri.c ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c ft_nbrlen_base.c ft_unbrlen_base.c ft_atol.c
+SRC_STRING	:=	ft_atoi.c ft_itoa.c ft_split.c ft_strchr.c ft_strdup.c ft_striteri.c ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c ft_nbrlen_base.c ft_unbrlen_base.c ft_atol.c ft_strcmp.c
 STRING		:=	$(SRC_STRING:%=$(STRING_DIR)/%)
 
 # TREE
