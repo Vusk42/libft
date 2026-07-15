@@ -6,7 +6,7 @@
 /*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 12:56:32 by marudlof          #+#    #+#             */
-/*   Updated: 2025/11/17 17:00:26 by marudlof         ###   ########.fr       */
+/*   Updated: 2026/05/05 19:22:25 by marudlof         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,17 @@
 
 void	ft_freeptr(void **nptr)
 {
-	while (*nptr++)
-		free (*nptr);
-	free (nptr);
+	void	**tmp;
+
+	if (!nptr)
+		return ;
+	tmp = nptr;
+	while (*tmp)
+	{
+		free(*tmp);
+		*tmp = NULL;
+		tmp++;
+	}
+	free(nptr);
+	nptr = NULL;
 }

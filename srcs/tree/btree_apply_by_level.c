@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   btree_apply_by_level.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marudlof <marudlof@42angouleme.fr>         +#+  +:+       +#+        */
+/*   By: nbaudoin <nbaudoin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 17:27:57 by marudlof          #+#    #+#             */
-/*   Updated: 2025/11/17 13:51:16 by marudlof         ###   ########.fr       */
+/*   Updated: 2026/06/17 10:57:00 by nbaudoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ void	btree_apply_by_level(t_btree *root,
 {
 	int	count;
 	int	level;
-	int	level_save;
 	int	*levels;
 
 	if (!root)
@@ -48,7 +47,6 @@ void	btree_apply_by_level(t_btree *root,
 	level = 0;
 	while (level < count)
 	{
-		level_save = level;
 		level++;
 		levels[level] = 1;
 		apply(root, applyf, 0, &levels[level]);
